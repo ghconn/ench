@@ -48,3 +48,10 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+div.icon-box {
+    float: left;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+}
