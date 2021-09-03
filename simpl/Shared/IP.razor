@@ -1,0 +1,22 @@
+﻿@using System.Text.RegularExpressions
+@using Core.Common
+@inject HttpService HttpService
+
+@if (string.IsNullOrEmpty(ip))
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="text-primary">@ip</div>
+}
+
+@code {
+    private string ip;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var content = await HttpService.GetStringAsync("https://www.ipaddress.com");
+        ip = Regex.Match(content, @"((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)").Value;
+    }
+}
