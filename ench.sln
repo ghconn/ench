@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "simpl", "simpl\simpl.csproj", "{E79EA762-D2B4-45C0-BCF2-2E4A4A618696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpl", "tpl\tpl.csproj", "{F79EF02C-CAEF-4034-BF51-16973C438E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tpl", "tpl\tpl.csproj", "{F79EF02C-CAEF-4034-BF51-16973C438E0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

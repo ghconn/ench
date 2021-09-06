@@ -1,0 +1,33 @@
+﻿@page
+@model simpl.Pages.cccc.sssssModel
+@using simpl.Shared
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>cccc.aaaaa</title>
+    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    @if (DateTime.UtcNow.ToLocalTime().Hour < 18 && DateTime.UtcNow.ToLocalTime().Hour >= 6)
+    {
+        <h2>天上有太阳</h2>
+    }
+    else
+    {
+        <h2>天上有星星</h2>
+    }
+
+    @{
+        var company = "ML Co., Ltd";
+    }
+    <!--todo:理解render-mode-->
+    <component type="typeof(Foot)" render-mode="ServerPrerendered" param-Company="company" />
+</body>
+
+</html>
