@@ -1,1 +1,1 @@
-﻿1.no baby no cry, dont you ever cry tonight, sing with me just one more time, everything ganna be all right.
+﻿1.no baby no cry, dont you ever cry tonight, sing with me just one more time, everything's ganna be all right.
